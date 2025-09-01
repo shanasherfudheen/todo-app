@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="dist/css/style.css" />
+  </head>
+  <body class="container-fluid">
+    <h1 class="text-center">To-do List</h1>
+    <div
+      class="container mt-4 w-50 border border-1 border-dark rounded p-3 bg-white"
+    >
+      <form
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
+        <input type="text" placeholder="Write something..." class="w-100 p-2" />
+        <button class="btn btn-primary mt-3 w-25" type="submit">
+          Add task
+        </button>
+      </form>
+      <ul class="list-group mt-4" id="task-list">
+        <!-- List items will be added here dynamically -->
+      </ul>
+    </div>
+    <script src="todolist.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.js" />
+  </body>
+</html>
